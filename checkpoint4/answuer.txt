@@ -1,0 +1,37 @@
+¿Cuál es la diferencia entre una lista y una tupla en Python?
+
+la diferencia principal es la mutabilidad, las listas son mutables, ella pueden cambiar, agregar, eliminar elementos de la propia lista, sin ningun problema, en cambio las tuppels no, son inmutables, estas se usan precisamente cuando necesitamos que la informacion que contienen no se pueda cambiar de manera facil, es cierto que podemos valernos de ciertos modos en los cuales podemos hacer que una tuppel se modifique, como la reasignacion, pero su escencia es inmutable, ademas de las diferencias de escritura que usan (listas [] y tuppel ()).
+una lista seria definida de la siguiente manera 
+my_list = [1, 2, 3,4]
+una tupple con los mismos elemntos se escribiria 
+my_tupple = (1, 2, 3, 4)
+
+¿Cuál es el orden de las operaciones?
+ este orden en general es mundialmente aceptado, el que no enseñan en el devcamp, por lo cual se puede tomar como el orden de las operaciones, para esto tenemos una forma de recordarlo facilmente usando la mnemotecnia con la frase Please Excuse My Dear Aunt Sally por lo cual tenemos que primero son los parentesis, seguido de los exponentes, luego las multiplicaciones, divisiones, la adicion y la sutraccion.
+por lo que se le conoce como el metodo PEMDAS
+
+¿Qué es un diccionario Python?
+Un diccionario es un elemento que contiene informacion, la cual viene en pares, una parte se llama key y la otra el valor, la llave se usa para llamar el valor que corresponde a esta, las claves son unicas, no puedo tener dos claves con distinto valor, una sobre escribe a la otra, los diccionarios ademas de tener valores dobles por elemento utilizan las llaves como forma de escritura {}
+Un ejemplo de diccionario seria
+my_dict =  {
+	   'casa' : 4,
+	   'arbol' : 5,
+	   'automovil' : 7
+	   }
+en estos puedes llamar a los valores solamente, que seria 4 ,5 y 6, tambien puedes llamar solo a las llaves que serian 'casa , 'arbol' , 'automovil', puedes llamar un valor mencionando su key. 
+valor_uno = my_dict {'casa'}
+print (valor_uno) esto imprimira 4
+
+¿Cuál es la diferencia entre el método ordenado y la función de ordenación?
+
+la diferencia entre el metodo y la funcion es que el metodo sort() ordena el elemento propio, modifica el original dandole el orden, por lo tanto modifica nuestra lista original, este no retorna un valor, su retorno es None, por lo que si intentamos meter la aplicacion de la funcion en una variable esa al imprimirla arrojara un None. 
+la funcion sorted, ordena la lista y retorna esa lista ordenada como una lista nueva que podemos imprimir. al meter la funcion dentro de una variable, esta variable tendra una lista con los valores de la original ordenados, pero diferente a la original, por lo q tendriamos la lista original desordenada y la lista ordenada con la funcion.
+
+¿Qué es un operador de asignación?
+un operador de asignacion es como un atajo para dismunir el codigo, el operador de asignacion principal es el = que asigna valor a una variable, sin embargo podemos combinarlo con distintos otros operadores para indicar lo que se diria con una expresion mas laraga, por ejemplo 
+x = 5 +5
+estp arrpjara que x = 10
+ahora si quiero sumarle 5 mas, podria hacerlo de la siguiente fomra
+x = x + 5. pero usando los operadores de asignacion quedaria
+x += 5, que es la misma expresion anterior, mas corta. 
+se pueden usar distintos operadores, sin embargo los mas usados seran += -=
