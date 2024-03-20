@@ -1,16 +1,14 @@
-"""crearemos una funcion fizzbuzz"""
+import math #para importar la libreria que encesito para los modulos
+your_num = int(input('ingrese su número ')) #para tomar el valor desde la consola
 def fizzbuzz(your_num):
-    """definiendo la funcion fizzbuzz"""
-    for num in range(1, your_num + 1):
-        if num % 3 == 0 and num % 5 == 0:
-            print('fizzbuzz')
-        elif num % 3 == 0:
+    for num in range(1, your_num + 1):# define el rango, utilizando el valor ingresado, le suma uno por el index
+        if num%3 == 0 and num%5 ==0: #para verificar primero si es divisible entre 5 y 3
+            print('fizzbuzz') 
+        elif num%3 == 0:
             print('fizz')
-        elif num % 5 == 0:
+        elif num%5 ==0:
             print('buzz')
         else:
             print(num)
 
-console_num = int(input('Ingrese su número '))#toma el valor desde la consola
-
-fizzbuzz(console_num)#define el parametro de la funcion desde el valor ingresado en la consola
+fizzbuzz(your_num)#define el parametro de mi funcion segun lo ingresado desde consola
